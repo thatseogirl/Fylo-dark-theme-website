@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg";
+
 export default function Navigation() {
   return (
     <nav className="navigation">
-      <ul>
-        <li>
+      <div>
           <img src={logo} className="book" alt="book" />
-        </li>
-      </ul>
-      <ul>
+       </div>
+      <ul className="navigation_list">
         <li>
-          <Link to="/Feature">Features</Link>
-        </li>
-        <li>
-          <Link to="/Teams">Teams</Link>
+          <Link to="/" className="navigation_list_link">Features</Link>
         </li>
         <li>
-          <Link to="/SignIn">Sign In</Link>
+          <Link to="/Teams" className="navigation_list_link">Teams</Link>
+        </li>
+        <li>
+          <Link to="/SignIn" className="navigation_list_link">Sign In</Link>
         </li>
       </ul>
     </nav>

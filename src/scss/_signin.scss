@@ -1,0 +1,6 @@
+@use "./variables" as myVariable;
+
+
+.error{
+    color: myVariable.$error;
+}

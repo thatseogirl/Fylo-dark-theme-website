@@ -1,0 +1,49 @@
+@use "./variables" as myVariable;
+@use "./mixins";
+
+.subscribe {
+  background-color: myVariable.$intoandemail;
+  width: 680px;
+  margin: auto;
+  color: myVariable.$text;
+  border: 2px;
+  border-radius: 10px;
+  position: relative;
+  top: 200px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  @include mixins.respond(medium){
+    width: 600px;
+    height: 500px;
+  }
+    &_text {
+    text-align: center;
+    &_cta {
+      margin-top: 65px;
+      @include mixins.respond(medium){
+       display: flex;
+       flex-direction: column;
+      }
+      &_input {
+        width: 380px;
+        padding: 5px;
+        border-radius: 30px;
+        @include mixins.respond(medium){
+            width: 500px;
+           }
+        &_btn {
+          background-color: #40b3d0;
+          color: myVariable.$text;
+          font: 700 13px "Raleway", sans-serif;
+          float: right;
+          width: 180px;
+          padding: 10px;
+          border-radius: 20px;
+          border: none;
+        }
+      }
+    }
+  }
+}

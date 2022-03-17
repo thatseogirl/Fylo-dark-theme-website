@@ -1,0 +1,119 @@
+@use "./variables" as myVariable;
+@use "./mixins";
+
+.mobile_section {
+  background-image: url("../images/mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 60px;
+}
+.introduction {
+  text-align: center;
+  &_text_container {
+    margin-top: 35px;
+    &_heading {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1;
+      color: myVariable.$text;
+      &_children {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 35px;
+        line-height: 0.5;
+        color: myVariable.$text;
+        &_btn {
+          background-color: myVariable.$cyan;
+          padding: 10px;
+          margin-top: 20px;
+          border: none;
+          border-radius: 20px;
+          width: 200px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+          color: myVariable.$text;
+        }
+      }
+    }
+  }
+}
+
+.accessandsecurity {
+  display: flex;
+  color: myVariable.$text;
+  justify-content: center;
+  text-align: center;
+  @include mixins.respond(medium) {
+    flex-direction: column;
+  }
+  &_div_1 {
+    width: 350px;
+    margin: 60px;
+    &_child {
+      margin-top: 90px;
+    }
+  }
+}
+.store {
+  margin-top: 70px;
+}
+.file {
+  &_heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    color: myVariable.$text;
+    &_body {
+      font-family: "Open Sans", sans-serif;
+      color: myVariable.$bodytext;
+      font-size: 12px;
+    }
+  }
+}
+.img {
+  height: 8vh;
+}
+
+.productive {
+  width: 80%;
+  height: auto;
+}
+.productive_section {
+  display: flex;
+  justify-content: center;
+  color: myVariable.$text;
+  padding: 60px;
+  @include mixins.respond(medium) {
+    flex-direction: column;
+  }
+  &_div {
+    width: 45%;
+
+    &_header {
+      font-family: "Raleway", sans-serif;
+      font-size: 35px;
+      text-align: left;
+      &_textsection {
+        margin-top: 20px;
+        font-family: "Open Sans", sans-serif;
+        color: myVariable.$bodytext;
+        font-size: 13px;
+      }
+    }
+  }
+}
+.fyloLink{
+    color: myVariable.$cyan;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    &:hover{
+        color: myVariable.$text;
+    }
+    &_arrow{
+        margin-right: 20px;
+    }
+}

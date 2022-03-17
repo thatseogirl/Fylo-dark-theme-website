@@ -1,0 +1,59 @@
+@use "./variables" as myVariable;
+@use "./mixins";
+
+.testimonials_quotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 85%;
+    margin: auto;
+    color: myVariable.$text;
+    @include mixins.respond(medium){
+        flex-direction: column;
+    }
+    &_first{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        height: 200px;
+        background-color: myVariable.$testimonial;
+        box-shadow: myVariable.$boxshadow;
+        &_text{
+            font-family:  "Open Sans", sans-serif;
+            padding: 25px;
+            text-align: left;
+            font-size: 15px;
+            position: relative;
+            top: 30px;
+        }
+    }
+    .founders{
+        display: flex;
+        gap: 10px;
+        padding: 25px;
+        position: relative;
+        bottom: 10px;
+        &_title{
+            line-height: 0;
+        }
+        h2{
+            font-family: "Raleway", sans-serif;
+            font-size: 16px;
+            text-align: left;
+        }
+      p{
+        text-align: left;
+        font-size: 10px;
+      }
+    }
+    .Profile{
+        border-radius: 50%;
+        height: 5vh;
+    }
+}
+.quotes{
+    margin-left: 50px;
+}

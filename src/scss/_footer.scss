@@ -1,0 +1,41 @@
+@use "./variables" as myVariable;
+@use "./mixins";
+
+footer{
+    background-color: myVariable.$footer;
+    color: myVariable.$text;
+    padding: 80px;
+    padding-top: 180px;
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    @include mixins.respond(medium){
+        flex-direction: column;
+    }
+    &_1{
+        display: flex;
+        gap: 20px;
+        &_2{
+            // display: flex;
+            // flex-direction: column;
+            // gap: 20px;
+            &_3{
+                line-height: 2em;
+                &_4{
+                    line-height: 2em;
+                    &_socialmedia{
+                        display: flex;
+            flex-direction: row;
+            gap: 10px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+.phone, .email{
+    margin-right: 30px;
+}
