@@ -1,41 +1,56 @@
 @use "./variables" as myVariable;
 @use "./mixins";
 
-footer{
-    background-color: myVariable.$footer;
-    color: myVariable.$text;
-    padding: 80px;
-    padding-top: 180px;
+footer {
+  background-color: myVariable.$footer;
+  color: myVariable.$text;
+  padding: 80px;
+  padding-top: 180px;
+  font-family: "Open Sans", sans-serif;
 }
-.footer_flex{
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  @include mixins.respond(medium) {
+    flex-direction: column;
+    font-size: 30px;
+  }
+  &_1 {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    @include mixins.respond(medium){
-        flex-direction: column;
+    gap: 20px;
+    @include mixins.respond(medium) {
+      margin-top: 20px;
     }
-    &_1{
-        display: flex;
-        gap: 20px;
-        &_2{
-            // display: flex;
-            // flex-direction: column;
-            // gap: 20px;
-            &_3{
-                line-height: 2em;
-                &_4{
-                    line-height: 2em;
-                    &_socialmedia{
-                        display: flex;
+    &_2 {
+      @include mixins.respond(medium) {
+        margin-top: 20px;
+      }
+      &_3 {
+        line-height: 2em;
+        @include mixins.respond(medium) {
+          margin-top: 20px;
+        }
+        &_4 {
+          line-height: 2em;
+          @include mixins.respond(medium) {
+            margin-top: 20px;
+          }
+          &_socialmedia {
+            display: flex;
             flex-direction: row;
             gap: 10px;
-                    }
-                   
-                }
+            @include mixins.respond(medium) {
+              margin-top: 20px;
+              float: right;
             }
+          }
         }
+      }
     }
+  }
 }
-.phone, .email{
-    margin-right: 30px;
+.phone,
+.email {
+  margin-right: 30px;
 }

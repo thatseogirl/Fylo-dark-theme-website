@@ -1,23 +1,32 @@
 @use "./variables" as myVariable;
 @use "./mixins";
 
-.navigation{
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  @include mixins.respond(small) {
+    padding: 30px;
+  }
+  &_list {
     display: flex;
     justify-content: space-between;
-    padding: 60px;
-    &_list{
-        display: flex;
-        justify-content: space-between;
-        &_link{
-            margin-right: 60px;
-            color: myVariable.$bodytext;
-            text-decoration: none;
-            font-family: 'Raleway', sans-serif;
-            font-size:  14px ;
-            font-weight: 400;
-            &:hover{
-                color: myVariable.$cyan;
-            }
-        }
+    &_link {
+      margin-right: 60px;
+      color: myVariable.$bodytext;
+      text-decoration: none;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      @include mixins.respond(small) {
+        margin-right: 30px;
+      }
+      @include mixins.respond(small) {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: myVariable.$cyan;
+      }
     }
+  }
 }

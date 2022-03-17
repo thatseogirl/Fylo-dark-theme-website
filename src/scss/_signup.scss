@@ -1,0 +1,47 @@
+@use "./variables" as myVariable;
+@use "./mixins";
+
+.error {
+  color: myVariable.$error;
+  font-size: 10px;
+}
+.signup {
+  max-width: 23%;
+  margin: auto;
+  height: 520px;
+  background-color: myVariable.$intoandemail;
+  border-radius: 20px;
+  @include mixins.respond(large) {
+    min-width: 45%;
+  }
+  @include mixins.respond(medium) {
+    min-width: 60%;
+  }
+  @include mixins.respond(small) {
+    min-width: 80%;
+  }
+}
+.fixed-height {
+  height: 400px;
+}
+.form {
+  padding: 20px;
+  &_group {
+    margin-top: 20px;
+    &_field {
+      width: 100%;
+      padding: 5px;
+      &_button {
+        background-color: myVariable.$cyan;
+        color: myVariable.$text;
+        text-transform: uppercase;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    }
+  }
+}

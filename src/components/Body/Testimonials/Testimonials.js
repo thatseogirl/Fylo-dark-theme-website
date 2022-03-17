@@ -25,7 +25,6 @@ export default function Testimonials() {
             </div>
           </aside>
         </div>
-
         <div className="testimonials_quotes_first">
           <p className="testimonials_quotes_first_text">
             Fylo has improved our team productivity by an order of magnitude.
@@ -42,7 +41,6 @@ export default function Testimonials() {
             </div>
           </aside>
         </div>
-
         <div className="testimonials_quotes_first">
           <p className="testimonials_quotes_first_text">
             Fylo has improved our team productivity by an order of magnitude.
@@ -59,7 +57,6 @@ export default function Testimonials() {
             </div>
           </aside>
         </div>
-
       </div>
     </section>
   );

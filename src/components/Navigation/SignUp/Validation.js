@@ -20,7 +20,7 @@ export default function Validation() {
       .required("pasword is Required"),
     confirmPassword: Yup.string().oneOf(
       [Yup.ref("password"), null],
-      "Please confirm Email"
+      "Please confirm password"
     ),
   });
   return userSchema;

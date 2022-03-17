@@ -47,12 +47,15 @@
   color: myVariable.$text;
   justify-content: center;
   text-align: center;
-  @include mixins.respond(medium) {
+  @include mixins.respond(small) {
     flex-direction: column;
   }
   &_div_1 {
     width: 350px;
     margin: 60px;
+    @include mixins.respond(small) {
+      margin: 30px;
+    }
     &_child {
       margin-top: 90px;
     }
@@ -67,10 +70,16 @@
     font-size: 18px;
     margin-top: 30px;
     color: myVariable.$text;
+    @include mixins.respond(small) {
+      font-size: 25px;
+    }
     &_body {
       font-family: "Open Sans", sans-serif;
       color: myVariable.$bodytext;
       font-size: 12px;
+      @include mixins.respond(small) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -87,12 +96,14 @@
   justify-content: center;
   color: myVariable.$text;
   padding: 60px;
-  @include mixins.respond(medium) {
+  @include mixins.respond(small) {
     flex-direction: column;
   }
   &_div {
     width: 45%;
-
+    @include mixins.respond(small) {
+      width: 100%;
+    }
     &_header {
       font-family: "Raleway", sans-serif;
       font-size: 35px;
@@ -106,14 +117,19 @@
     }
   }
 }
-.fyloLink{
-    color: myVariable.$cyan;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    &:hover{
-        color: myVariable.$text;
-    }
-    &_arrow{
-        margin-right: 20px;
-    }
+.fyloLink {
+  color: myVariable.$cyan;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  &:hover {
+    color: myVariable.$text;
+  }
+  &_arrow {
+    margin-right: 20px;
+  }
+}
+.intro {
+  @include mixins.respond(small) {
+    width: 400px;
+  }
 }

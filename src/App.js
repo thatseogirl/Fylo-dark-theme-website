@@ -7,8 +7,7 @@ import './App.css';
 import './App.scss';
 import Home from './components/Home/Home';
 import Teams from "./components/Navigation/Teams/Teams";
-import SignIn from "./components/Navigation/SignIn/SignIn";
-import LogIn from "./components/Navigation/LogIn/LogIn";
+import SignUp from "./components/Navigation/SignUp/SignUp";
 
 function App() {
   return (
@@ -17,8 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Teams" element={<Teams />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/LogIn" element={<LogIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
         </Routes>
     </BrowserRouter>
     </div>

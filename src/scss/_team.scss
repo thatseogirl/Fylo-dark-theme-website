@@ -1,32 +1,31 @@
 @use "./variables" as myVariable;
 @use "./mixins";
 
-.team{
-    font-family:'Raleway', sans-serif;
-    &_profile{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;  
-        gap: 30px;
-        margin-top: 30px;
-        text-align: center;
-        @include mixins.respond(medium){
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-}
-
-h2{
+.team {
+  font-family: "Raleway", sans-serif;
+  &_profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
     text-align: center;
-    color: myVariable.$text;
-    font-weight: 700;
-}
-.title{
-    text-transform: uppercase;
-    font-weight: 700;
-    &_body{
-        font-weight: 400;
-        font-size: 12px;
+    @include mixins.respond(medium) {
+      flex-direction: column;
+      align-items: center;
     }
+  }
+}
+h2 {
+  text-align: center;
+  color: myVariable.$text;
+  font-weight: 700;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  &_body {
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
