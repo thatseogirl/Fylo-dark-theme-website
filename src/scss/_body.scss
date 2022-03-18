@@ -15,8 +15,13 @@
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       font-size: 30px;
+      width: 550px;
       line-height: 1;
+     margin: auto;
       color: myVariable.$text;
+      @include mixins.respond(small) {
+        width: 400px;
+      }     
       &_children {
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
@@ -41,7 +46,6 @@
     }
   }
 }
-
 .accessandsecurity {
   display: flex;
   color: myVariable.$text;
@@ -88,7 +92,7 @@
 }
 
 .productive {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .productive_section {
@@ -98,6 +102,7 @@
   padding: 60px;
   @include mixins.respond(small) {
     flex-direction: column;
+    padding: 10px;
   }
   &_div {
     width: 45%;

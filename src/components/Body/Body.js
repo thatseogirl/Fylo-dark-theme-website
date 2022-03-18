@@ -20,8 +20,7 @@ export default function Body() {
           </div>
           <div className="introduction_text_container">
             <div className="introduction_text_container_heading">
-              <p>All your files in one secure location,</p>
-              <p>accessible anywhere. </p>
+              <p>All your files in one secure location, accessible anywhere.</p>
             </div>
             <div className="introduction_text_container_heading_children">
               <p>

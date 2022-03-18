@@ -14,7 +14,6 @@ footer {
   padding-top: 30px;
   @include mixins.respond(medium) {
     flex-direction: column;
-    font-size: 30px;
   }
   &_1 {
     display: flex;
