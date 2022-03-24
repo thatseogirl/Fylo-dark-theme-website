@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Testimonials from "./Testimonials/Testimonials";
-import Subscribe from "./Subscribe/Subscribe";
+
 import intro from "../../images/intro.png";
 import productive from "../../images/productive.png";
 import arrow from "../../images/arrow.svg";
@@ -120,7 +120,6 @@ export default function Body() {
             </div>
           </aside>
           <Testimonials />
-          <Subscribe />
         </section>
       </div>
     </div>

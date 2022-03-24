@@ -1,8 +1,5 @@
 import React from "react";
 import { Formik, Field, Form } from "formik";
-import Subscribe from "../../Body/Subscribe/Subscribe";
-import Footer from "../../Footer/Footer";
-import Navigation from "../Navigation";
 import Validation from "./Validation";
 
 export default function SignUp() {
@@ -16,8 +13,6 @@ export default function SignUp() {
   };
   const userSchema = Validation;
   return (
-    <div>
-      <Navigation />
       <div className="signup">
         <Formik
           initialValues={initialValues}
@@ -110,8 +105,5 @@ export default function SignUp() {
           )}
         </Formik>
       </div>
-      <Subscribe />
-      <Footer />
-    </div>
   );
 }

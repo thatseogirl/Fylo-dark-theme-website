@@ -1,17 +1,12 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Subscribe from "../../Body/Subscribe/Subscribe";
-import Navigation from "../Navigation";
-import Footer from "../../Footer/Footer";
 
 import alexander from "../../../images/alexander.jpg";
 import julian from "../../../images/julian.jpg";
 
 export default function Teams() {
   return (
-    <div>
-      <Navigation />
-      <div className="team">
+    <div className="team">
         <h2>Meet the Team</h2>
         <div className="team_profile">
           <Card style={{ width: "18rem" }} id="screen1">
@@ -118,8 +113,5 @@ export default function Teams() {
           </Card>
         </div>
       </div>
-      <Subscribe />
-      <Footer />
-    </div>
   );
 }

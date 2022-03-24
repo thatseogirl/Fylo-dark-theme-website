@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.svg";
 
 export default function Navigation() {
@@ -10,19 +10,19 @@ export default function Navigation() {
       </div>
       <ul className="navigation_list">
         <li>
-          <Link to="/" className="navigation_list_link">
+          <NavLink to="/" className="navigation_list_link">
             Features
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/Teams" className="navigation_list_link">
+          <NavLink to="/Teams" className="navigation_list_link">
             Teams
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/SignUp" className="navigation_list_link">
+          <NavLink to="/SignUp" className="navigation_list_link">
             Sign Up
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
