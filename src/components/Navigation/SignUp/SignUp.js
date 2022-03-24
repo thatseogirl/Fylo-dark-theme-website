@@ -62,7 +62,7 @@ export default function SignUp() {
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Enter email"
+                    placeholder="Enter Email"
                     className="form_group_field"
                   ></Field>
                 </div>
@@ -74,7 +74,7 @@ export default function SignUp() {
                     type="email"
                     id="confirmEmail"
                     name="confirmEmail"
-                    placeholder="confirm email"
+                    placeholder="Confirm Email"
                     className="form_group_field"
                   ></Field>
                 </div>
@@ -86,7 +86,7 @@ export default function SignUp() {
                     type="password"
                     id="password"
                     name="password"
-                    placeholder="Enter password"
+                    placeholder="Enter Password"
                     className="form_group_field"
                   ></Field>
                 </div>
@@ -98,7 +98,7 @@ export default function SignUp() {
                     type="password"
                     id="congirmPassword"
                     name="confirmPassword"
-                    placeholder="confirm password"
+                    placeholder="Confirm Password"
                     className="form_group_field"
                   ></Field>
                 </div>

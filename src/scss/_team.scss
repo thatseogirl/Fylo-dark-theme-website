@@ -16,16 +16,154 @@
     }
   }
 }
+
 h2 {
   text-align: center;
   color: myVariable.$text;
   font-weight: 700;
 }
+
 .title {
   text-transform: uppercase;
   font-weight: 700;
   &_body {
     font-weight: 400;
     font-size: 12px;
+  }
+}
+
+/* animations  */
+#screen1 {
+  animation: moveScreen 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen2 {
+  animation: moveScreen2 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen3 {
+  animation: moveScreen3 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen4 {
+  animation: moveScreen4 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen5 {
+  animation: moveScreen5 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen6 {
+  animation: moveScreen6 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen7 {
+  animation: moveScreen7 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen8 {
+  animation: moveScreen8 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+#screen9 {
+  animation: moveScreen9 3s ease-in-out infinite;
+  transform-box: fill-box;
+}
+@keyframes moveScreen {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  5% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+@keyframes moveScreen2 {
+  0%,
+  10% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveScreen3 {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveScreen4 {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  35% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveScreen5 {
+  0%,
+  40% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  45% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveScreen6 {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+@keyframes moveScreen7 {
+  0%,
+  60% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+@keyframes moveScreen8 {
+  0%,
+  70% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+@keyframes moveScreen9 {
+  0%,
+  80% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  85% {
+    opacity: 1;
+    transform: translate(0px, 0);
   }
 }

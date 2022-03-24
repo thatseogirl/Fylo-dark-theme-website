@@ -5,6 +5,7 @@
   color: myVariable.$error;
   font-size: 10px;
 }
+
 .signup {
   max-width: 23%;
   margin: auto;
@@ -21,26 +22,29 @@
     min-width: 80%;
   }
 }
+
 .fixed-height {
   height: 400px;
 }
+
 .form {
   padding: 20px;
   &_group {
     margin-top: 20px;
     &_field {
       width: 100%;
-      padding: 5px;
+      border-radius: 20px;
+      padding: 8px;
       &_button {
         background-color: myVariable.$cyan;
         color: myVariable.$text;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 15px;
         width: 100%;
         margin-top: 20px;
         border: none;
         border-radius: 20px;
-        padding: 10px;
+    padding: 13px;
       }
     }
   }

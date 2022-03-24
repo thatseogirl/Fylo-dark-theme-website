@@ -31,7 +31,7 @@
       }
       &_input {
         width: 380px;
-        padding: 5px;
+        padding: 8px;
         border-radius: 30px;
         @include mixins.respond(medium) {
           width: 100%;
@@ -48,7 +48,7 @@
           font: 700 13px "Raleway", sans-serif;
           float: right;
           width: 180px;
-          padding: 10px;
+          padding: 13px;
           border-radius: 20px;
           border: none;
           @include mixins.respond(medium) {

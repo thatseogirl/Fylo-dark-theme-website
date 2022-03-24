@@ -7,6 +7,7 @@
   background-size: 100%;
   padding: 60px;
 }
+
 .introduction {
   text-align: center;
   &_text_container {
@@ -46,6 +47,7 @@
     }
   }
 }
+
 .accessandsecurity {
   display: flex;
   color: myVariable.$text;
@@ -65,9 +67,11 @@
     }
   }
 }
+
 .store {
   margin-top: 70px;
 }
+
 .file {
   &_heading {
     font-family: "Raleway", sans-serif;
@@ -87,6 +91,7 @@
     }
   }
 }
+
 .img {
   height: 8vh;
 }
@@ -122,6 +127,7 @@
     }
   }
 }
+
 .fyloLink {
   color: myVariable.$cyan;
   font-family: "Open Sans", sans-serif;
@@ -133,6 +139,7 @@
     margin-right: 20px;
   }
 }
+
 .intro {
   @include mixins.respond(small) {
     width: 400px;
