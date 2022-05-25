@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import Testimonials from "./Testimonials/Testimonials";
 
-import intro from "../../images/intro.png";
-import productive from "../../images/productive.png";
-import arrow from "../../images/arrow.svg";
-import anywhere from "../../images/anywhere.svg";
-import security from "../../images/security.svg";
-import collaboration from "../../images/collaboration.svg";
-import file from "../../images/file.svg";
+import profileImages from "../../images/image";
 
 export default function Body() {
   return (
@@ -16,7 +11,7 @@ export default function Body() {
       <div>
         <section className="introduction">
           <div>
-            <img src={intro} alt="Introduction" className="intro" />
+            <img src={profileImages.intro} alt="Introduction" className="intro" />
           </div>
           <div className="introduction_text_container">
             <div className="introduction_text_container_heading">
@@ -41,7 +36,7 @@ export default function Body() {
             <div className="accessandsecurity_div_1">
               <section className="accessandsecurity_div">
                 <img
-                  src={anywhere}
+                  src={profileImages.anywhere}
                   alt="Icon Access Anywhere"
                   className="img"
                 />
@@ -54,7 +49,7 @@ export default function Body() {
                 </div>
               </section>
               <section className="accessandsecurity_div_1_child">
-                <img src={collaboration} alt="collaboration" className="img" />
+                <img src={profileImages.collaboration} alt="collaboration" className="img" />
                 <div className="file">
                   <h2 className="file_heading"> Real-time collaboration</h2>
                   <p className="file_heading_body">
@@ -67,7 +62,7 @@ export default function Body() {
             </div>
             <div className="accessandsecurity_div_1">
               <section className="accessandsecurity_div">
-                <img src={security} alt="Security" className="img" />
+                <img src={profileImages.security} alt="Security" className="img" />
                 <div className="file">
                   <h2 className="file_heading">Security you can trust</h2>
                   <p className="file_heading_body">
@@ -78,7 +73,7 @@ export default function Body() {
                 </div>
               </section>
               <section className="store">
-                <img src={file} alt="Store your files" className="img" />
+                <img src={profileImages.file} alt="Store your files" className="img" />
                 <div className="file">
                   <h2 className="file_heading">Store any type of file</h2>
                   <p className="file_heading_body">
@@ -94,7 +89,7 @@ export default function Body() {
           <aside className="productive_section">
             <div>
               <img
-                src={productive}
+                src={profileImages.productive}
                 alt="Illustration Stay Productive"
                 className="productive"
               />
@@ -115,7 +110,7 @@ export default function Body() {
               </p>
               <Link to="/SignUp" className="fyloLink">
                 See how Fylo works
-                <img src={arrow} alt="Arrow" className="fyloLink_arrow" />
+                <img src={profileImages.arrow} alt="Arrow" className="fyloLink_arrow" />
               </Link>
             </div>
           </aside>

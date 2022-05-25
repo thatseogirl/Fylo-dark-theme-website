@@ -9,7 +9,7 @@
 .signup {
   max-width: 23%;
   margin: auto;
-  height: 520px;
+  height: 580px;
   background-color: myVariable.$intoandemail;
   border-radius: 20px;
   @include mixins.respond(large) {
@@ -24,7 +24,7 @@
 }
 
 .fixed-height {
-  height: 450px;
+  height: 420px;
 }
 
 .form {
@@ -41,10 +41,10 @@
         text-transform: uppercase;
         font-size: 15px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
         border: none;
         border-radius: 20px;
-    padding: 13px;
+        padding: 13px;
       }
     }
   }

@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../images/logo.svg";
+import profileImages from "../../images/image";
 
 export default function Navigation() {
   return (
     <nav className="navigation">
       <div>
-        <img src={logo} className="book" alt="book" />
+        <img src={profileImages.logo} className="book" alt="book" />
       </div>
       <ul className="navigation_list">
         <li>

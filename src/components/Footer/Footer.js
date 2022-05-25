@@ -2,19 +2,16 @@ import React from "react";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
-import logo from "../../images/logo.svg";
-import location from "../../images/location.svg";
-import phone from "../../images/phone.svg";
-import email from "../../images/email.svg";
+import profileImages from "../../images/image";
 
 export default function Footer() {
   return (
     <footer>
-      <img src={logo} alt="Logo" className="footer_img" />
+      <img src={profileImages.logo} alt="Logo" className="footer_img" />
       <section className="footer_flex">
         <div className="footer_flex_1">
           <div>
-            <img src={location} alt="Map-Icon" className="map" />
+            <img src={profileImages.location} alt="Map-Icon" className="map" />
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur </p>
@@ -25,16 +22,14 @@ export default function Footer() {
         <div className="footer_flex_1_2">
           <div>
             <p className="contact">
-              {" "}
-              <img src={phone} alt="phone" className="phone" />
+              <img src={profileImages.phone} alt="phone" className="phone" />
               +1-543-123-4567
             </p>
           </div>
           <div>
             <p>
-              {" "}
-              <img src={email} alt="email" className="email" />
-              example@fylo.com{" "}
+              <img src={profileImages.email} alt="email" className="email" />
+              example@fylo.com
             </p>
           </div>
         </div>
