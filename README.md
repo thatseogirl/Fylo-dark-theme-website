@@ -1,5 +1,11 @@
-## This is a dark team website.
+## This is a dark themed website.
 
-## Created with Formyik, yup for form validtions(signup page), react,react-router, scss,html and css.
+# Created with 
+Formyik
+Yup for form validtions(signup page)
+React
+React-router
+SCSS
+HTML
 
-## Live demo https://tobi-fylo-website.netlify.app/
+Live demo https://tobi-fylo-website.netlify.app/
